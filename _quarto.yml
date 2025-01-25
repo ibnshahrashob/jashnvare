@@ -1,0 +1,82 @@
+project:
+  type: book
+  output-dir: ./docs
+
+jupyter: python3
+
+book:
+  title: "جشنواره علمی پژوهشی"
+  subtitle: "شیوه نامه های اختصاصی و برنامه عملیاتی قطب‌های کشوری پژوهشسرای دانش آموزی"
+  author:
+    - "منصوره چراغیان"
+    - "محسن ابراهیمی"
+  date: "2025"
+
+  page-footer:
+    left:  |
+      <a href="./index.html">
+        جشنواره علمی پژوهشی
+      </a>
+    right: |
+      <a href="https://ibnshahrashob.ir/">
+        پژوهشسرای دانش آموزی ابن شهر آشوب ساروی
+      </a>
+
+  reader-mode: true
+  site-url: https://ibnshahrashob.github.io/jashnvare/
+  repo-url: https://github.com/ibnshahrashob/jashnvare/
+  repo-branch: master
+  repo-actions: none
+  cover-image: assets/img/cover.png
+  favicon: assets/img/favicon.ico
+
+  output-file: "jashnvare"
+
+  chapters:
+    - index.qmd
+    - intro.qmd
+
+    - fields/codenevisi.qmd
+
+    - references.qmd
+
+bibliography:
+  - assets/bib/references.bib
+
+language: assets/yml/_fa.yml
+
+number-sections: false
+crossref:
+  labels: arabic
+  subref-labels: arabic
+
+execute:
+  echo: true
+  warning: false
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+
+    search: true
+    code-copy: true
+    css:
+      - https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300&display=swap
+      - assets/css/rtl-style.css
+      - assets/css/termynal.css
+      - assets/css/custom.css
+
+    code-link: true
+    dir: rtl
+    csl: assets/csl/ieee.csl
+    fig-align: center
+    fig-format: svg
+    date-modified: today
+    date-format: iso
+    mainfont: Vazirmatn
+    include-in-header: assets/html/header.html
+
+editor: source
+
