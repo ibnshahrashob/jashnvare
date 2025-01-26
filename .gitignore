@@ -1,4 +1,5 @@
 /.quarto/
+/documents
 /.venv/
 /.vscode/
 /.ipynb_checkpoints/
